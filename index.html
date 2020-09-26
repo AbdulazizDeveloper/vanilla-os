@@ -1200,31 +1200,8 @@ margin-right: auto;  "
       </script>
     </object>
     <script>
-      function sun(x) {
-        document.getElementById("fl").style.filter =
-          "brightness(" + x.value + "%)";
-      }
-      function foo1() {
-        setting();
-        setting1();
-      }
-
-      function search() {
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName("TD");
-        for (i = 0; i < li.length; i++) {
-          a = li[i].getElementsByTagName("a")[0];
-          txtValue = a.textContent || a.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-          } else {
-            li[i].style.display = "none";
-          }
-        }
-      }
+    
+   
       document.getElementById("save1").addEventListener("keyup", function(e) {
         func();
         alertFunc();
@@ -1237,37 +1214,6 @@ margin-right: auto;  "
       });
      
     </script>
-    <script>
-      function less() {
-        document.getElementById("not").style.display = "none";
-        var x = document.getElementById("demo");
-        if (x.style.display === "flex") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "flex";
-        }
-      }
-      function more() {
-        document.getElementById("demo").style.display = "none";
-      }
-
-      function fullscreen() {
-        document.getElementById("fl").style.display = "none";
-        document.getElementsByTagName("tag")[0].style.display = "block";
-      }
-
-
-
-
-      function theme() {
-        document.getElementById("demo").style.display = "none";
-        var x = document.getElementById("not");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
+    
   </body>
 </html>
