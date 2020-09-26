@@ -1,0 +1,236 @@
+#myInput{
+  padding:2px; background-color:grey; color:withe; text-align:center; left:0px;position:absolute;top:30px; width:98.5%;
+}
+#myUL{
+  width:100%; position:absolute; top:100px;   text-align:center;
+}
+#demo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; top:186px;min-height: 90px; z-index:90; border:1px black solid; display:none; background-color:black; min-height: 570px; width:55%; position:absolute; left:377px;
+}
+.index{
+  display: none; cursor: move; position: absolute;
+}
+.checked{
+  display: none; cursor: move; position: absolute;
+}
+#taskbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+                min-height: 31px; position:absolute;left:0px;top:96%;width:100%;background-color:black; z-index:90;
+}
+#theme{
+  background-color:white;padding:6px;text-decoration:none;color:black;border-radius:5px; position:absolute;left:1px;border:none;width:100px;
+}
+#apps{
+  display: flex;
+ 
+                         float:left;
+  justify-content: left;
+ position:absolute;left:0px;top:0px;width:100%;
+                min-height: 21px;background-color:black;
+}
+#wifi{
+  background-color:white;padding:4px;text-decoration:none;color:black;border:none;width:5%;position:absolute; border-radius:5px;left:90%;top:-14px;
+}
+#launch{
+  background-color:black;padding:4px;text-decoration:none;color:black;border:none;width:5%;border-radius:5px;
+}
+.top{
+ background-color: black; display: block; margin-bottom: 0px; color: white;
+}
+input[type="text"]::placeholder {  
+                  color:white;
+                /* Firefox, Chrome, Opera */ 
+                text-align: center; 
+            } 
+input{
+    color: white;
+}
+.index{
+  z-index:45;
+    
+}
+
+iframe{
+  border:2px ridge black;
+  
+  
+  
+}
+.index{
+
+}
+
+.minus{
+   background-color:white;border:none; font-size:14px; border-radius:5px;
+}
+
+.clos{
+   
+  background-background-color:white;border:none; font-size:10px;border:none; font-size:14px;border-radius:5px;
+}
+.clos1{
+   background-color:white;border:none; font-size:14px; border-radius:5px; 
+}
+
+#fl{
+content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  width:100%;
+  height:100%;
+  background-color:white;
+}
+#myUL td a {
+        text-decoration: none;
+        color: white;
+        font-family: calibri light;
+    
+        font-size: 15px;
+
+      }/* CSS files add styling rules to your content */
+  #myUL  a:hover {
+       color:black;
+
+      }
+#id01 li a {
+        text-align:left;
+        text-decoration: none;
+        color: white;
+        font-family: calibri light;
+     
+  width:10px;
+  height:10px;
+        font-size: 15px;
+              }/* CSS files add styling rules to your content */
+  #id01  a:hover {
+       color:black;
+
+      }
+#notpad:hover{
+  background-color:lightgrey;
+}
+#file:hover{
+  background-color:lightgrey;
+}
+#cac:hover{
+  background-color:lightgrey;
+}
+#clock:hover{
+  background-color:lightgrey;
+}
+#setting:hover{
+  background-color:lightgrey;
+}
+#help:hover{
+  background-color:lightgrey;
+}
+#app:hover{
+  background-color:lightgrey;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+.close:hover{
+  background-color:red;
+}
+#not{
+  background-color:white;
+  color:black;
+  border:1px solid black;
+  width:270px;
+  height:400px;
+font:  calibri light, sans-serif;
+  position:absolute;
+  top:5px;
+  left:1px;
+  display:none;
+}
+#not1{
+ 
+  
+  width:400px;
+  height:350px;
+border-radius:5px;
+ max-width:260px;
+  overflow:auto;
+  
+}
+#not2{
+ 
+  
+  width:700px;
+  height:200px;
+border-radius:5px;
+ max-width:260px;
+  
+}
+#dark{
+ width:30px;
+  height:30px;
+  border:none;
+  text-align:center;
+background-color:black;
+border-radius:50%;
+color:white;
+  
+}
+#not3{
+ width:30px;
+  height:30px;
+  border:none;
+  text-align:center;
+background-color:black;
+border-radius:50%;
+color:white;
+  
+}
+#dark1{
+ width:30px;
+  height:30px;
+  border:none;
+  text-align:center;
+background-color:black;
+border-radius:50%;
+color:white;
+  
+}
+#settin{
+ width:30px;
+  height:30px;
+  border:none;
+  text-align:center;
+background-color:black;
+border-radius:50%;
+color:white;
+  
+}
+#screen{
+ width:30px;
+  height:30px;
+  border:none;
+  text-align:center;
+background-color:black;
+border-radius:50%;
+colorolor:black;
+}
+#mydiv1 {
+  position: absolute;
+  
+};
