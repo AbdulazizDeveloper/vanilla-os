@@ -27,7 +27,7 @@
         var x = document.getElementById("demo");
         if (x.style.display === "flex") {
           x.style.display = "none";
-          x.style.animation = "mymove 20s ";
+          x.style.animation = "mymove 5s ";
         } else {
           x.style.display = "flex";
               x.style.animation = " ";
