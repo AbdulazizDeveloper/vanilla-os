@@ -691,6 +691,11 @@ margin-right: auto;  "
       <p id="last" style="position:absolute; z-index:1; top:1px; left:50%;"></p>
 
       <script>
+        if (navigator.onLine) {
+   document.getElementById("wifi").innerHTML ="<i class='fas fa-wifi'></i>";
+ } else {
+   document.getElementById("wifi").innerHTML = "<i class='fas fa-times'></i>";
+ }
         not();
         function not() {
           var x = document.getElementById("notifications");
