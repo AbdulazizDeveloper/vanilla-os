@@ -282,7 +282,7 @@ function apps() {
     li.setAttribute("id", "app");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
-      '<img src="https://cdn.glitch.com/09a8ed15-b951-4720-a342-399a79eb78c2%2Fthsssestore.png?v=1598887175329"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/apps.png"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
     li.setAttribute("onclick", 'lanuchapp("app")');
     li.setAttribute("href", "javascript:void(0)");
     ul.appendChild(li);
