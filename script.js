@@ -222,7 +222,7 @@ function photo() {
 }
 function clock() {
   if (document.getElementById("clock")) {
-lanuchapp("clock");
+lanuchapp1("clock","https://abdulazizdeveloper.github.io/vanilla-os/clock.html");
   } else {
     var ul = document.getElementById("apps"); // the [0] identifies the first element of the returned array
     var li = document.createElement("a");
@@ -230,10 +230,10 @@ lanuchapp("clock");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
       '<img src="https://cdn.glitch.com/09a8ed15-b951-4720-a342-399a79eb78c2%2Fclock.png?v=1594566529657" style="width:20px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
-    li.setAttribute("onclick", 'lanuchapp("clock")');
+    li.setAttribute("onclick", 'lanuchapp1("clock","https://abdulazizdeveloper.github.io/vanilla-os/clock.html")');
     li.setAttribute("href", "javascript:void(0)");
     ul.appendChild(li);
-    lanuchapp("clock");
+    lanuchapp1("clock","https://abdulazizdeveloper.github.io/vanilla-os/clock.html");
   }
 }
 
