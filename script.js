@@ -1,14 +1,10 @@
-   document.getElementById("wifi").innerHTML =
-          "<i class='fas fa-wifi'></i>";
+
 beast();
 function beast(){
 if (navigator.onLine) {
- alert(navigator.online)
-        document.getElementById("wifi").innerHTML =
-          "<i class='fas fa-wifi'></i>";
-      } else {
-        document.getElementById("wifi").innerHTML =
-          "<i class='fas fa-times'></i>";
+   document.getElementById("wifi").innerHTML ="<i class='fas fa-wifi'></i>";
+ } else {
+   document.getElementById("wifi").innerHTML = "<i class='fas fa-times'></i>";
       }
 }
       function currentTime() {
