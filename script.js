@@ -1,4 +1,5 @@
- if (navigator.onLine) {
+ alert("ss");
+if (navigator.onLine) {
         document.getElementById("wifi").innerHTML =
           "<i class='fas fa-wifi'></i>";
       } else {
