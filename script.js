@@ -186,20 +186,20 @@ function file() {
 
 function cac() {
   if (document.getElementById("cac")) {
- lanuchapp("cac")
+ lanuchapp1("cac","https://abdulazizdeveloper.github.io/vanilla-os/cac.html")
   } else {
     var ul = document.getElementById("apps"); // the [0] identifies the first element of the returned array
     var li = document.createElement("a");
     li.setAttribute("id", "cac");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
-    li.setAttribute("onclick", 'lanuchapp("cac")');
+    li.setAttribute("onclick", 'lanuchapp("cac","https://abdulazizdeveloper.github.io/vanilla-os/cac.html")');
 
     li.setAttribute("href", "javascript:void(0)");
     li.innerHTML =
       '<img src="https://cdn.glitch.com/09a8ed15-b951-4720-a342-399a79eb78c2%2Fcculator.png?v=1594565016885" style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
 
     ul.appendChild(li);
-   lanuchapp("cac")
+   lanuchapp1("cac","https://abdulazizdeveloper.github.io/vanilla-os/cac.html")
   }
 }
 function photo() {
