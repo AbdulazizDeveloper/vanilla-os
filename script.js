@@ -328,7 +328,7 @@ function fun1(y) {
   var d = y.parentNode.id;
   var a = y.parentNode.id;
   var n = d.search("1");
-
+ 
   var res = "#" + d.substr(0, n);
 
   var b = document.querySelector("#" + a).outerHTML;
