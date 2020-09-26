@@ -1,3 +1,5 @@
+   document.getElementById("wifi").innerHTML =
+          "<i class='fas fa-wifi'></i>";
 beast();
 function beast(){
 if (navigator.onLine) {
