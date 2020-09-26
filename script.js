@@ -27,8 +27,10 @@
         var x = document.getElementById("demo");
         if (x.style.display === "flex") {
           x.style.display = "none";
+                x.style.animation = " ";
         } else {
           x.style.display = "flex";
+              x.style.animation = "mymove 4s ";
         }
       }
       function more() {
@@ -61,8 +63,8 @@ function updateOnlineStatus(){
    document.getElementById("wifi").innerHTML ="<i class='fas fa-wifi'></i>";
  } else {
    document.getElementById("wifi").innerHTML = "<i class='fas fa-times'></i>";
- }     
-      
+ }
+
 }
       function currentTime() {
         var date = new Date(); /* creating object of Date class */
@@ -110,7 +112,7 @@ function updateOnlineStatus(){
         document.getElementById("demoa").style.backgroundColor = "black";
         document.getElementById("demoa").style.color = "white";
 function lanuchapp(div) {
-  
+
   if (document.getElementById("my"+div).hasAttribute("src")) {
     document.getElementById(div+"1").style.display = "block";
     var y1 = document.querySelectorAll("#deck > div");
@@ -123,10 +125,10 @@ function lanuchapp(div) {
     var newItem = document
       .getElementById(div+"1")
       .setAttribute("class", "index");
-  
-   
+
+
  } else{
-    
+
        document.getElementById(div+"1").style.display = "block";
     var y1 = document.querySelectorAll("#deck > div");
     var tgh = document.querySelector("#"+div+" > div");
@@ -139,10 +141,10 @@ function lanuchapp(div) {
       .getElementById(div+"1")
       .setAttribute("class", "index");
      document.getElementById("my"+div).setAttribute("src", div+".html");
-   
+
  }
- 
-   
+
+
   dragElement1(document.getElementById(div+"1"));
 }
 function lanuchapp1(div,src) {
@@ -158,8 +160,8 @@ function lanuchapp1(div,src) {
     var newItem = document
       .getElementById(div+"1")
       .setAttribute("class", "index");
-  
-   
+
+
  } else{
        document.getElementById(div+"1").style.display = "block";
     var y1 = document.querySelectorAll("#deck > div");
@@ -173,7 +175,7 @@ function lanuchapp1(div,src) {
       .getElementById(div+"1")
       .setAttribute("class", "index");
      document.getElementById("my"+div).setAttribute("src", src);
-   
+
  }
   dragElement1(document.getElementById(div+"1"));
 }
@@ -301,7 +303,7 @@ function setting() {
       '<img src="https://abdulazizdeveloper.github.io/vanilla-os/setting.png"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
     li.setAttribute("onclick", '  lanuchapp1("setting","https://abdulazizdeveloper.github.io/vanilla-os/setting.html")');
     li.setAttribute("href", "javascript:void(0)");
-    ul.appendChild(li); 
+    ul.appendChild(li);
       lanuchapp1("setting","https://abdulazizdeveloper.github.io/vanilla-os/setting.html")
   }
 }
@@ -372,7 +374,7 @@ function fun12(y) {
   closethis();
   document.getElementById("demo").style.display = "none";
   document.getElementById("not").style.display = "none";
-  applytheme();  
+  applytheme();
 }
 function cl(y) {
   y.parentNode.outerHTML = "";
@@ -382,7 +384,7 @@ function fun1(y) {
   var d = y.parentNode.id;
   var a = y.parentNode.id;
   var n = d.search("1");
- 
+
   var res = "#" + d.substr(0, n);
 
   var b = document.querySelector("#" + a).outerHTML;
@@ -402,7 +404,7 @@ function fun1(y) {
   closethis();
   document.getElementById("demo").style.display = "none";
   document.getElementById("not").style.display = "none";
-  applytheme();  
+  applytheme();
 }
 function fn1(y) {
   var d = y.parentNode.id;
@@ -430,7 +432,7 @@ function fu(y) {
   closethis();
   document.getElementById("demo").style.display = "none";
   document.getElementById("not").style.display = "none";
-  applytheme();  
+  applytheme();
 }
 
 
@@ -441,7 +443,7 @@ function myFunction4(x) {
   document.getElementById(g+"12").style.width = hello;
 }
 
-  
+
 
 
 function dragElement1(elmnt) {
@@ -474,7 +476,7 @@ function dragElement1(elmnt) {
     document.onmouseup = closeDragElement1;
      document.onmouseout = closeDragElement1;
     // call a function whenever the cursor moves:
-    
+
     document.onmousemove = elementDrag1;
     document.getElementById("demo").style.display = "none";
     document.getElementById("not").style.display = "none";
