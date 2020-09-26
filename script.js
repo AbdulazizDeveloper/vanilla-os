@@ -48,8 +48,10 @@
         var x = document.getElementById("not");
         if (x.style.display === "block") {
           x.style.display = "none";
+          document.getElementById("demo").style.animation = "";
         } else {
           x.style.display = "block";
+          document.getElementById("demo").style.animation = "mymove 4s ";
         }
       }
 window.addEventListener('online',  updateOnlineStatus);
@@ -93,9 +95,7 @@ function updateOnlineStatus(){
       }
 
       currentTime();
-applytheme(); 
-function applytheme(){
-        document.getElementById("not").style.backgroundColor = "black";
+  document.getElementById("not").style.backgroundColor = "black";
         document.getElementById("not").style.color = "white";
 
         document.getElementById("not3").style.color = "black";
@@ -109,10 +109,6 @@ function applytheme(){
         document.getElementById("launch").style.backgroundColor = "white";
         document.getElementById("demoa").style.backgroundColor = "black";
         document.getElementById("demoa").style.color = "white";
-
-   
-
-      }
 function lanuchapp(div) {
   
   if (document.getElementById("my"+div).hasAttribute("src")) {
