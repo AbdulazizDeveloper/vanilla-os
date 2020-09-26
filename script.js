@@ -30,7 +30,7 @@
                 x.style.animation = " ";
         } else {
           x.style.display = "flex";
-              x.style.animation = "mymove 4s ";
+              x.style.animation = "mymove 20s ";
         }
       }
       function more() {
