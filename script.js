@@ -252,7 +252,7 @@ function setting() {
       '<img src="https://abdulazizdeveloper.github.io/vanilla-os/setting.png"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
     li.setAttribute("onclick", '  lanuchapp("setting")');
     li.setAttribute("href", "javascript:void(0)");
-    ul.appendChild(li);
+    ul.appendChild(li); 
       lanuchapp("setting")
   }
 }
