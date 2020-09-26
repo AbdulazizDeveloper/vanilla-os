@@ -171,7 +171,7 @@ function file() {
     li.setAttribute("id", "file");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
-      '<img src="https://cdn.glitch.com/09a8ed15-b951-4720-a342-399a79eb78c2%2Ffile.png?v=1594572133905" style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/file.png" style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
     li.setAttribute("onclick", 'lanuchapp("file")');
 
     li.setAttribute("href", "javascript:void(0)");
