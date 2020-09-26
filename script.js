@@ -310,20 +310,15 @@ function fun(y) {
   var d = y.parentNode.id;
   var f = d.search("12");
   var gsk = d.substr(0, f);
-
   var tgh = document.getElementById(gsk);
-
   tgh.querySelector("div").style.backgroundColor = "grey";
-
   var n = d.search("2");
-
   var res = "#" + d.substr(0, n);
-
   document.querySelector(res).style.display = "none";
+  alert(res)
   closethis();
   document.getElementById("demo").style.display = "none";
   document.getElementById("not").style.display = "none";
-  applytheme();  
 }
 function cl(y) {
   y.parentNode.outerHTML = "";
