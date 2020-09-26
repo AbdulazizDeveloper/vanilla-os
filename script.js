@@ -27,10 +27,10 @@
         var x = document.getElementById("demo");
         if (x.style.display === "flex") {
           x.style.display = "none";
-                x.style.animation = " ";
+          x.style.animation = "mymove 20s ";
         } else {
           x.style.display = "flex";
-              x.style.animation = "mymove 20s ";
+              x.style.animation = " ";
         }
       }
       function more() {
