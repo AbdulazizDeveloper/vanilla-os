@@ -155,9 +155,9 @@ h1 {
   background-color:red;
 }
 #not{
-  background-color:white;
+  background-color:black;
   color:black;
-  border:1px solid black;
+  border:1px solid white;
   width:270px;
   height:400px;
 font:  calibri light, sans-serif;
