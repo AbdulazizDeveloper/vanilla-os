@@ -1,10 +1,14 @@
- if (navigator.onLine) {
+beast();
+function beast(){
+if (navigator.onLine) {
+ alert(navigator.online)
         document.getElementById("wifi").innerHTML =
           "<i class='fas fa-wifi'></i>";
       } else {
         document.getElementById("wifi").innerHTML =
           "<i class='fas fa-times'></i>";
       }
+}
       function currentTime() {
         var date = new Date(); /* creating object of Date class */
         var hour = date.getHours();
