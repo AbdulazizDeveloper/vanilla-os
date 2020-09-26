@@ -146,7 +146,7 @@ function search1(x) {
 
 function notepad() {
   if (document.getElementById("notpad")) {
-      lanuchapp("notpad")
+      lanuchapp1("notpad","https://abdulazizdeveloper.github.io/vanilla-os/notpad.html")
   } else {
     var ul = document.getElementById("apps"); // the [0] identifies the first element of the returned array
     var li = document.createElement("a");
@@ -154,10 +154,10 @@ function notepad() {
     li.setAttribute("style", "padding:3px;   height:100%; float:left;  ");
     li.innerHTML =
       '<img src="https://cdn.glitch.com/09a8ed15-b951-4720-a342-399a79eb78c2%2Fnotpad1.png?v=1594570995094" style="width:25px;height:20px;"> <div  style="position:absolute;background-color:lightgreen; width:10px; top:15px;  height:10px;border-radius:50%;"></div>';
-    li.setAttribute("onclick", '  lanuchapp("notpad")');
+    li.setAttribute("onclick", '  lanuchapp1("notpad","https://abdulazizdeveloper.github.io/vanilla-os/notpad.html")');
     li.setAttribute("href", "javascript:void(0)");
     ul.appendChild(li);
-     lanuchapp("notpad")
+     lanuchapp1("notpad","https://abdulazizdeveloper.github.io/vanilla-os/notpad.html")
   }
 }
 function file() {
