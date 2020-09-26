@@ -153,7 +153,7 @@ function notepad() {
     li.setAttribute("id", "notpad");
     li.setAttribute("style", "padding:3px;   height:100%; float:left;  ");
     li.innerHTML =
-      '<img src="https://cdn.glitch.com/09a8ed15-b951-4720-a342-399a79eb78c2%2Fnotpad1.png?v=1594570995094" style="width:25px;height:20px;"> <div  style="position:absolute;background-color:lightgreen; width:10px; top:15px;  height:10px;border-radius:50%;"></div>';
+      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/notpad.png" style="width:25px;height:20px;"> <div  style="position:absolute;background-color:lightgreen; width:10px; top:15px;  height:10px;border-radius:50%;"></div>';
     li.setAttribute("onclick", '  lanuchapp1("notpad","https://abdulazizdeveloper.github.io/vanilla-os/notpad.html")');
     li.setAttribute("href", "javascript:void(0)");
     ul.appendChild(li);
@@ -249,7 +249,7 @@ function setting() {
     li.setAttribute("id", "setting");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
-      '<img src="https://cdn.glitch.com/09a8ed15-b951-4720-a342-399a79eb78c2%2Fsettngs1.png?v=1594573023247"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/setting.png"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
     li.setAttribute("onclick", '  lanuchapp("setting")');
     li.setAttribute("href", "javascript:void(0)");
     ul.appendChild(li);
