@@ -306,7 +306,7 @@ window.onkeyup = function(event) {
 };
 
 
-function fun(y) {
+function fun12(y) {
   var d = y.parentNode.id;
   var f = d.search("12");
   var gsk = d.substr(0, f);
