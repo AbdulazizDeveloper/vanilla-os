@@ -192,7 +192,7 @@ function cac() {
     var li = document.createElement("a");
     li.setAttribute("id", "cac");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
-    li.setAttribute("onclick", 'lanuchapp("cac","https://abdulazizdeveloper.github.io/vanilla-os/cac.html")');
+    li.setAttribute("onclick", 'lanuchapp1("cac","https://abdulazizdeveloper.github.io/vanilla-os/cac.html")');
 
     li.setAttribute("href", "javascript:void(0)");
     li.innerHTML =
