@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+  />
+  <body style="background-color:lightgrey;">
+    <div
+      id="cac"
+      style="width:94%;background-color:white; text-align:right; padding:6px;margin-top:0px; position:absolute; top:0%; left:0%;"
+    >
+      0
+    </div>
+    <button
+      onclick="myFunction()"
+      style="position:absolute; top:22%; height:200px;background-color:white;border:none; font-size:35px; height:240px; left:77%; padding:12px;"
+    >
+      =
+    </button>
+    <style>
+      button{
+        font-size:49px;
+      }
+    </style>
+ <button onclick="c()" style=" width:220px;font-size:20px; top:40px; left:2px; position:absolute; padding:8px;background-color:white;border:none;padding:6px;">
+          CE
+        </button>
+    <table style="position:absolute;top:20%; left:0%;">
+      <td>
+       
+      </td>
+      <td>
+       
+      </td>
+      <td>
+       
+      </td>
+      <tr>
+        <td>
+          <button
+            onclick="plus(this)"
+            style="background-color:white;border:none;"
+          >
+            9
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style="background-color:white;border:none;background-color:white;border:none; "
+          >
+            8
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style=" background-color:white;border:none;"
+          >
+            7
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style="background-color:white;border:none; "
+          >
+            +
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button
+            onclick="plus(this)"
+            style=" background-color:white;border:none;background-color:white;border:none;"
+          >
+            4
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style=" background-color:white;border:none;"
+          >
+            5
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style=" background-color:white;border:none;"
+          >
+            6
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style="pbackground-color:white;border:none;background-color:white;border:none; left:85.5%; "
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button
+            onclick="plus(this)"
+            style="background-color:white;border:none;background-color:white;border:none; "
+          >
+            1
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style="background-color:white;border:none;"
+          >
+            2
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style="background-color:white;border:none; "
+          >
+            3
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="divi()"
+            style=" top:30%;background-color:white;border:none; left:85.5%; "
+          >
+            ÷
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <button
+            onclick="plus(this)"
+            style=" background-color:white;border:none;width:39px; "
+          >
+            .
+
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style=" background-color:white;border:none;"
+          >
+            0
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style=" background-color:white;border:none;"
+          >
+                        
+            x
+          </button>
+        </td>
+        <td>
+          <button
+            onclick="plus(this)"
+            style=" top:43%;background-color:white;border:none; left:85.5%; width:40px; "
+          >
+            -
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function plus1() {
+        var list = document.getElementById("cac");
+        var m = list.innerText;
+
+        list.setAttribute("memory", m);
+        var t = (list.innerText = "");
+        list.appendChild(t);
+      }
+      function myFunction() {
+        var list1 = document.getElementById("cac").innerHTML;
+        var r = list1.replace("÷", "/");
+        var m = r.replace("×", "*");
+   var s = m.replace("x", "**");
+        var g = eval(s);
+
+        var list1 = (document.getElementById("cac").innerHTML = g);
+      }
+      function plus(x) {
+        var t = document.createTextNode(x.innerText);
+        var list = document.getElementById("cac");
+        list.appendChild(t);
+      }
+      function divi() {
+        var t = document.createTextNode("÷");
+        var list = document.getElementById("cac");
+        list.appendChild(t);
+      }
+      function c() {
+        var list = (document.getElementById("cac").innerHTML = "0");
+      }
+      function c1() {
+        var list = document.getElementById("cac").innerHTML;
+        var a = list.substring(0, list.length - 1);
+        document.getElementById("cac").innerHTML = a;
+      }
+    </script>
+  </body>
+</html>
