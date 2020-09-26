@@ -34,7 +34,7 @@
 }
 #apps{
   display: flex;
- 
+
                          float:left;
   justify-content: left;
  position:absolute;left:0px;top:0px;width:100%;
@@ -49,24 +49,24 @@
 .top{
  background-color: black; display: block; margin-bottom: 0px; color: white;
 }
-input[type="text"]::placeholder {  
+input[type="text"]::placeholder {
                   color:white;
-                /* Firefox, Chrome, Opera */ 
-                text-align: center; 
-            } 
+                /* Firefox, Chrome, Opera */
+                text-align: center;
+            }
 input{
     color: white;
 }
 .index{
   z-index:45;
-    
+
 }
 
 iframe{
   border:2px ridge black;
-  
-  
-  
+
+
+
 }
 .index{
 
@@ -77,11 +77,11 @@ iframe{
 }
 
 .clos{
-   
+
   background-background-color:white;border:none; font-size:10px;border:none; font-size:14px;border-radius:5px;
 }
 .clos1{
-   background-color:white;border:none; font-size:14px; border-radius:5px; 
+   background-color:white;border:none; font-size:14px; border-radius:5px;
 }
 
 #fl{
@@ -99,7 +99,7 @@ content: "";
         text-decoration: none;
         color: white;
         font-family: calibri light;
-    
+
         font-size: 15px;
 
       }/* CSS files add styling rules to your content */
@@ -112,7 +112,7 @@ content: "";
         text-decoration: none;
         color: white;
         font-family: calibri light;
-     
+
   width:10px;
   height:10px;
         font-size: 15px;
@@ -167,23 +167,23 @@ font:  calibri light, sans-serif;
   display:none;
 }
 #not1{
- 
-  
+
+
   width:400px;
   height:350px;
 border-radius:5px;
  max-width:260px;
   overflow:auto;
-  
+
 }
 #not2{
- 
-  
+
+
   width:700px;
   height:200px;
 border-radius:5px;
  max-width:260px;
-  
+
 }
 #dark{
  width:30px;
@@ -193,17 +193,17 @@ border-radius:5px;
 background-color:black;
 border-radius:50%;
 color:white;
-  
+
 }
 #not3{
  width:30px;
   height:30px;
   border:none;
   text-align:center;
-background-color:black;
+background-color:white;
 border-radius:50%;
-color:white;
-  
+color:black;
+
 }
 #dark1{
  width:30px;
@@ -213,7 +213,7 @@ color:white;
 background-color:black;
 border-radius:50%;
 color:white;
-  
+
 }
 #settin{
  width:30px;
@@ -223,7 +223,7 @@ color:white;
 background-color:black;
 border-radius:50%;
 color:white;
-  
+
 }
 #screen{
  width:30px;
@@ -236,5 +236,5 @@ colorolor:black;
 }
 #mydiv1 {
   position: absolute;
-  
+
 };
