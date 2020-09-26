@@ -315,9 +315,9 @@ function fun(y) {
 
   tgh.querySelector("div").style.backgroundColor = "grey";
 
-  var n = d.search("2");
 
-  var res = "#" + d.substr(0, n);
+
+  var res = "#" + gsk+"1";
 
   document.querySelector(res).style.display = "none";
   closethis();
