@@ -265,7 +265,7 @@ function help() {
     li.setAttribute("id", "help");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
-      '<img src="https://cdn.glitch.com/09a8ed15-b951-4720-a342-399a79eb78c2%2Fhelp.png?v=1594561993409"  style="width:23px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/help.png"  style="width:23px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
     li.setAttribute("onclick", 'lanuchapp1("help","https://petal-unruly-handball.glitch.me/")');
     li.setAttribute("href", "javascript:void(0)");
 
