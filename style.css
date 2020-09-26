@@ -1,3 +1,7 @@
+@keyframes mymove {
+  from {top: 775px;}
+  to {top: 186px;}
+}
 #myInput{
   padding:2px; background-color:grey; color:withe; text-align:center; left:0px;position:absolute;top:30px; width:98.5%;
 }
