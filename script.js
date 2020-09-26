@@ -51,7 +51,7 @@
           document.getElementById("demo").style.animation = "";
         } else {
           x.style.display = "block";
-          document.getElementById("demo").style.animation = "mymove 4s ";
+
         }
       }
 window.addEventListener('online',  updateOnlineStatus);
