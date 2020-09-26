@@ -1,12 +1,10 @@
-
-if (navigator.onLine) {
+ if (navigator.onLine) {
         document.getElementById("wifi").innerHTML =
           "<i class='fas fa-wifi'></i>";
       } else {
         document.getElementById("wifi").innerHTML =
           "<i class='fas fa-times'></i>";
       }
-
       function currentTime() {
         var date = new Date(); /* creating object of Date class */
         var hour = date.getHours();
