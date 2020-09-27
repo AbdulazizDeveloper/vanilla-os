@@ -197,18 +197,18 @@ function search1(x) {
 
 function notepad() {
   if (document.getElementById("notpad")) {
-      lanuchapp1("notpad","https://abdulazizdeveloper.github.io/vanilla-os/notpad.html")
+      lanuchapp1("notpad","https://vin.staeljadei1.repl.co/notpad.html")
   } else {
     var ul = document.getElementById("apps"); // the [0] identifies the first element of the returned array
     var li = document.createElement("a");
     li.setAttribute("id", "notpad");
     li.setAttribute("style", "padding:3px;   height:100%; float:left;  ");
     li.innerHTML =
-      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/notpad.png" style="width:25px;height:20px;"> <div  style="position:absolute;background-color:lightgreen; width:10px; top:15px;  height:10px;border-radius:50%;"></div>';
-    li.setAttribute("onclick", '  lanuchapp1("notpad","https://abdulazizdeveloper.github.io/vanilla-os/notpad.html")');
+      '<img src="https://vin.staeljadei1.repl.co/notpad.png" style="width:25px;height:20px;"> <div  style="position:absolute;background-color:lightgreen; width:10px; top:15px;  height:10px;border-radius:50%;"></div>';
+    li.setAttribute("onclick", '  lanuchapp1("notpad","https://vin.staeljadei1.repl.co/notpad.html")');
     li.setAttribute("href", "javascript:void(0)");
     ul.appendChild(li);
-     lanuchapp1("notpad","https://abdulazizdeveloper.github.io/vanilla-os/notpad.html")
+     lanuchapp1("notpad","https://vin.staeljadei1.repl.co/notpad.html")
   }
 }
 function file() {
@@ -222,7 +222,7 @@ function file() {
     li.setAttribute("id", "file");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
-      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/file.png" style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+      '<img src="https://vin.staeljadei1.repl.co/file.png" style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
     li.setAttribute("onclick", 'lanuchapp("file")');
 
     li.setAttribute("href", "javascript:void(0)");
@@ -237,20 +237,20 @@ function file() {
 
 function cac() {
   if (document.getElementById("cac")) {
- lanuchapp1("cac","https://abdulazizdeveloper.github.io/vanilla-os/cac.html")
+ lanuchapp1("cac","https://vin.staeljadei1.repl.co/cac.html")
   } else {
     var ul = document.getElementById("apps"); // the [0] identifies the first element of the returned array
     var li = document.createElement("a");
     li.setAttribute("id", "cac");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
-    li.setAttribute("onclick", 'lanuchapp1("cac","https://abdulazizdeveloper.github.io/vanilla-os/cac.html")');
+    li.setAttribute("onclick", 'lanuchapp1("cac","https://vin.staeljadei1.repl.co/cac.html")');
 
     li.setAttribute("href", "javascript:void(0)");
     li.innerHTML =
-      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/cculator.png" style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+      '<img src="https://vin.staeljadei1.repl.co/cculator.png" style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
 
     ul.appendChild(li);
-   lanuchapp1("cac","https://abdulazizdeveloper.github.io/vanilla-os/cac.html")
+   lanuchapp1("cac","https://vin.staeljadei1.repl.co/cac.html")
   }
 }
 function photo() {
@@ -265,7 +265,7 @@ function photo() {
 
     li.setAttribute("href", 'javascript:void(0)');
     li.innerHTML =
-      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/photo.png" style="width:20px;height:20px;"> <div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+      '<img src="https://vin.staeljadei1.repl.co/photo.png" style="width:20px;height:20px;"> <div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
 
     ul.appendChild(li);
     lanuchapp("photo")
@@ -273,18 +273,18 @@ function photo() {
 }
 function clock() {
   if (document.getElementById("clock")) {
-lanuchapp1("clock","https://abdulazizdeveloper.github.io/vanilla-os/clock.html");
+lanuchapp1("clock","https://vin.staeljadei1.repl.co/clock.html");
   } else {
     var ul = document.getElementById("apps"); // the [0] identifies the first element of the returned array
     var li = document.createElement("a");
     li.setAttribute("id", "clock");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
-      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/clock.png" style="width:20px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
-    li.setAttribute("onclick", 'lanuchapp1("clock","https://abdulazizdeveloper.github.io/vanilla-os/clock.html")');
+      '<img src="https://vin.staeljadei1.repl.co/clock.png" style="width:20px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+    li.setAttribute("onclick", 'lanuchapp1("clock","https://vin.staeljadei1.repl.co/clock.html")');
     li.setAttribute("href", "javascript:void(0)");
     ul.appendChild(li);
-    lanuchapp1("clock","https://abdulazizdeveloper.github.io/vanilla-os/clock.html");
+    lanuchapp1("clock","https://vin.staeljadei1.repl.co/clock.html");
   }
 }
 
@@ -292,7 +292,7 @@ lanuchapp1("clock","https://abdulazizdeveloper.github.io/vanilla-os/clock.html")
 
 function setting() {
   if (document.getElementById("setting")) {
-   lanuchapp1("setting","https://abdulazizdeveloper.github.io/vanilla-os/setting.html")
+   lanuchapp1("setting","https://vin.staeljadei1.repl.co/setting.html")
   } else {
     var ul = document.getElementById("apps"); // the [0] identifies the first element of the returned array
     var li = document.createElement("a");
@@ -300,11 +300,11 @@ function setting() {
     li.setAttribute("id", "setting");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
-      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/setting.png"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
-    li.setAttribute("onclick", '  lanuchapp1("setting","https://abdulazizdeveloper.github.io/vanilla-os/setting.html")');
+      '<img src="https://vin.staeljadei1.repl.co/setting.png"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+    li.setAttribute("onclick", '  lanuchapp1("setting","https://vin.staeljadei1.repl.co/setting.html")');
     li.setAttribute("href", "javascript:void(0)");
     ul.appendChild(li);
-      lanuchapp1("setting","https://abdulazizdeveloper.github.io/vanilla-os/setting.html")
+      lanuchapp1("setting","https://vin.staeljadei1.repl.co/setting.html")
   }
 }
 function help() {
@@ -316,7 +316,7 @@ function help() {
     li.setAttribute("id", "help");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
-      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/help.png"  style="width:23px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+      '<img src="https://vin.staeljadei1.repl.co/help.png"  style="width:23px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
     li.setAttribute("onclick", 'lanuchapp1("help","https://petal-unruly-handball.glitch.me/")');
     li.setAttribute("href", "javascript:void(0)");
 
@@ -326,18 +326,18 @@ function help() {
 }
 function apps() {
   if (document.getElementById("app")) {
-    lanuchapp1("app","https://abdulazizdeveloper.github.io/vanilla-os/apps.html")
+    lanuchapp1("app","https://vin.staeljadei1.repl.co/apps.html")
   } else {
     var ul = document.getElementById("apps"); // the [0] identifies the first element of the returned array
     var li = document.createElement("a");
     li.setAttribute("id", "app");
     li.setAttribute("style", "padding:3px;   height:100%; float:left; ");
     li.innerHTML =
-      '<img src="https://abdulazizdeveloper.github.io/vanilla-os/apps.png"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
-    li.setAttribute("onclick", 'lanuchapp1("app","https://abdulazizdeveloper.github.io/vanilla-os/apps.html")');
+      '<img src="https://vin.staeljadei1.repl.co/apps.png"  style="width:25px;height:20px;"><div style="background-color:lightgreen; width:10px; position:absolute; top:15px;  height:10px;border-radius:50%;"></div>';
+    li.setAttribute("onclick", 'lanuchapp1("app","https://vin.staeljadei1.repl.co/apps.html")');
     li.setAttribute("href", "javascript:void(0)");
     ul.appendChild(li);
-    lanuchapp1("app","https://abdulazizdeveloper.github.io/vanilla-os/apps.html")
+    lanuchapp1("app","https://vin.staeljadei1.repl.co/apps.html")
   }
 }
 

@@ -69,7 +69,7 @@
               class="sl"
               style="width:100%;text-decoration:none;color:black;"
               ><img
-                src="https://abdulazizdeveloper.github.io/vanilla-os/desktop.png""
+                src="https://vin.staeljadei1.repl.co/desktop.png""
                 style="width:25px;height:20px; display: block;
   margin-left: auto;
   margin-right: auto;  "
@@ -85,7 +85,7 @@
               class="sl"
               style="width:100%;text-decoration:none;color:black;"
               ><img
-                src="https://abdulazizdeveloper.github.io/vanilla-os/document.png"
+                src="https://vin.staeljadei1.repl.co/document.png"
                 style="width:25px;height:20px; display: block;
   margin-left: auto;
   margin-right: auto;  "
@@ -101,7 +101,7 @@
               class="sl"
               style="text-decoration:none;color:black;"
               ><img
-                src="https://abdulazizdeveloper.github.io/vanilla-os/download.png"
+                src="https://vin.staeljadei1.repl.co/download.png"
                 style="width:25px;height:20px; display: block;
   margin-left: auto;
   margin-right: auto;  "
@@ -118,7 +118,7 @@
               class="sl"
               style=" text-decoration:none;color:black; height:100%;"
               ><img
-                src="https://abdulazizdeveloper.github.io/vanilla-os/photo.png"
+                src="https://vin.staeljadei1.repl.co/photo.png"
                 style="width:25px;height:20px; display: block;
   margin-left: auto;
   margin-right: auto; "
@@ -223,32 +223,32 @@
         </button>
       </div>
       <div id="all" style="position:absolute;top:50px;left:15%;" >
-        <ul ondrop="drop(event)" ondragover="allowDrop(event)" 
+        <ul ondrop="drop(event)" ondragover="allowDrop(event)"
           class="file"
           id="recent"
           style="list-style-type: none;
   "
         >
           <p style="display:block;">Recent</p>
-       
+
         </ul>
 
         <ul id="desktop" class="file1" ondrop="drop(event)" ondragover="allowDrop(event)" >
           <p style="display:block;">Desktop</p>
-        
-    
+
+
         </ul>
         <ul id="documents" ondrop="drop(event)" ondragover="allowDrop(event)"  class="file1">
           <p style="display:block;">Documents</p>
         </ul>
         <ul  ondrop="drop(event)" ondragover="allowDrop(event)" id="download" class="file1">
           <p style="display:block;">Downloads</p>
-      
-      
+
+
         </ul>
         <ul  ondrop="drop(event)" ondragover="allowDrop(event)" id="photos" class="file1">
           <p style="display:block;">Photos</p>
-      
+
         </ul>
       </div>
     </object>
@@ -290,9 +290,9 @@
     <p style="display:none;" id="txt1"></p>
 
     <script>
-   
-      
-      
+
+
+
       document.addEventListener("drag", function(event) {
       var div_list = document.querySelectorAll("#all > ul  ");
 
@@ -301,7 +301,7 @@
             div.removeAttribute("class");
           });
 });
-   
+
       function allowDrop(ev) {
   ev.preventDefault();
 }
@@ -320,10 +320,10 @@ function drop(ev) {
 
         var div_a = [...div_li]; // converts NodeList to Array
         div_a.forEach(d => {
-    
+
   var a =ev.target
  a.insertBefore(d, a.length);
-      
+
         });
    document.getElementById("input").value=event.target.id;
   hello();
@@ -333,7 +333,7 @@ function drop(ev) {
         localStorage.setItem("lastname", e);
       }, 3000);
 
-     
+
       function option() {
         var m = (document.getElementById("filechose").style.display = null);
       }
@@ -565,7 +565,7 @@ function drop(ev) {
         document.getElementById("photos").setAttribute("class", "file1");
         document.getElementById("recent").setAttribute("class", "file1");
       }
-      
+
       function photos() {
         var l = document.getElementById("photos");
 
@@ -668,10 +668,10 @@ function drop(ev) {
         var y = document.querySelectorAll("#all > ul  > tag > input");
         var i;
         for (i = 0; i < y.length; i++) {
-          y[i].click(); 
+          y[i].click();
           y[i].setAttribute("class", "unchecked");
           y[i].parentNode.setAttribute("class", "unchecked1");
-         
+
         }
       }
 d();
@@ -684,7 +684,7 @@ d();
           y[i].setAttribute("class", "unchecked");
           y[i].parentNode.setAttribute("class", "unchecked1");
                x.parentNode.removeAttribute("draggable", "true");
-    x.parentNode.removeAttribute("ondragstart", "drag(event)");      
+    x.parentNode.removeAttribute("ondragstart", "drag(event)");
         }
       }
 
@@ -694,27 +694,27 @@ d();
         div_array1.forEach(div1 => {
           if (div1.hasAttribute("file")) {
             var s = div1.getAttribute("id");
-            
+
             var x, i;
             x = document.getElementsByName(s);
             for (i = 0; i < x.length; i++) {
               x[i].remove();
-            
+
             }
 
-           
-            
+
+
           }
         });
         var div_list = document.querySelectorAll(".file > .checked1"); // returns NodeList
         var div_array = [...div_list]; // converts NodeList to Array
         div_array.forEach(div => {
-         
+
 
             div.outerHTML = "";
-         
+
         });
-        
+
       }
       function del1() {
         var div_list = document.querySelectorAll("#all > ul  > .checked1"); // returns NodeList
@@ -827,13 +827,13 @@ d();
           x.setAttribute("class", "checked");
           x.parentNode.setAttribute("class", "checked1");
            x.parentNode.setAttribute("draggable", "true");
-    x.parentNode.setAttribute("ondragstart", "drag(event)");       
+    x.parentNode.setAttribute("ondragstart", "drag(event)");
         } else {
-  
+
           x.setAttribute("class", "unchecked");
           x.parentNode.setAttribute("class", "unchecked1");
                x.parentNode.removeAttribute("draggable", "true");
-    x.parentNode.removeAttribute("ondragstart");      
+    x.parentNode.removeAttribute("ondragstart");
         }
       }
     </script>

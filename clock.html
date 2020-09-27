@@ -15,7 +15,7 @@
     </div>
   <div class="thisdiv" id="clock" style="color:white; margin-top:-8px; margin-top:-8px; background-color:black; margin-left:1px;">
   <div style="position:absolute; left:50%;top:55px;">
-    
+
 <h1 id="demo1">
     time2
   </h1>
@@ -25,9 +25,9 @@
   <div> <span id="state"></span></div>
     <div> <span id="city"></span></div>
   </div>
-  
-    
-<div class="clock" 
+
+
+<div class="clock"
 style="background-color:white; color:black; border-radius:50%; border:2p solid grey; ">
   <div class="hand hour" id="hand1" data-hour-hand></div>
   <div class="hand second"  data-second-hand></div>
@@ -44,7 +44,7 @@ style="background-color:white; color:black; border-radius:50%; border:2p solid g
   <div class="number number10">10</div>
   <div class="number number11">11</div>
   <div class="number number12">12</div>
-  
+
 </div>
   </div>
 <style>
@@ -156,7 +156,7 @@ style="background-color:white; color:black; border-radius:50%; border:2p solid g
   background-color: black;
 }
 
-  
+
   .clock .number1{--rotation:30deg;}
     .clock .number2{--rotation:60deg;}
     .clock .number3{--rotation:90deg;}
@@ -167,7 +167,7 @@ style="background-color:white; color:black; border-radius:50%; border:2p solid g
    .clock .number9{--rotation:270deg;}
   .clock .number10{--rotation:300deg;}
   .clock .number11{--rotation:330deg;}
-  
+
   </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -197,7 +197,7 @@ style="background-color:white; color:black; border-radius:50%; border:2p solid g
     $('#ip').html(location.IPv4);
   }
 });
-  
+
     var myVar = setInterval(myTimer ,1);
     setInterval( myFunction ,1);
 function myTimer() {
@@ -228,7 +228,7 @@ function myFunction() {
   var s = addZero(d.getSeconds());
   x.innerHTML = h + ":" + m ;
 }
- 
+
         setInterval(setClock, 1)
 
 const hourHand = document.querySelector('[data-hour-hand]')
@@ -249,7 +249,7 @@ function setRotation(element, rotationRatio) {
   element.style.setProperty('--rotation', rotationRatio * 360)
 }
 
-setClock()                 
+setClock()
   </script>
   <div class="thisdiv" id="stopwatch" style="display:flex;width:100%;z-index:13;background-color:black;color:white; " >
     <h1 style=" left:40%; position:absolute;">Stop watch</h1>
@@ -259,12 +259,13 @@ setClock()
 <div style="margin-left:auto;margin-right:auto;margin-top:17%;">
   <button onclick="myStartFunction()" style="padding:10px ; border-radius:50%;text-align:center; border:white 1px solid ; width:100px; margin-top:25%; background-color:black; color:white;  height:100px;">Start</button>&nbsp; &nbsp;<button style="padding:10px ; border-radius:50%; border:white 1px solid ; width:100px; margin-top:25%; background-color:black; color:white;  height:100px;" onclick="myStopFunction();">Pause</button>&nbsp;&nbsp;<button style="padding:10px ; border-radius:50%; border:white 1px solid ; width:100px; margin-top:25%; background-color:black; color:white;  height:100px;" onclick="myStopFunction();f()">Stop</button> </div>
     <h1 style="display:flex; left:45%; position:absolute; margin-top:10%;"> <p id="demo7" >0</p><p>:</p><p id="demo2">0</p><p>:</p><p id="demo4">00</p></h1>
-    
 
-  
+
+
 
 
 <script>
+<>
 var myVar;
 
 function myStartFunction() {
@@ -272,17 +273,17 @@ function myStartFunction() {
 }
 
 function alertFunc() {
-  
-  var c=  document.getElementById("demo4").innerHTML 
- var m= parseInt(c, 10) 
-  
+
+  var c=  document.getElementById("demo4").innerHTML
+ var m= parseInt(c, 10)
+
  if (m==60){
-    var c1=  document.getElementById("demo2").innerHTML 
- var m1= parseInt(c1, 10) 
+    var c1=  document.getElementById("demo2").innerHTML
+ var m1= parseInt(c1, 10)
 document.getElementById("demo4").innerHTML ="00";
      document.getElementById("demo2").innerHTML ="0"+eval( "m1+1");
    if (m1==60 ){
-       var c7=  document.getElementById("demo7").innerHTML 
+       var c7=  document.getElementById("demo7").innerHTML
  var m7= parseInt(c1, 10)
      document.getElementById("demo2").innerHTML ="00";
           document.getElementById("demo7").innerHTML ="0"+eval( "m2+1");
