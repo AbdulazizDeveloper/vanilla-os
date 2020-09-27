@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="https://vin.staeljadei1.repl.co/script.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -20,18 +19,18 @@
     <!-- import the webpage's javascript file -->
 
   </head>
-  <tag style="display:none;"
-    >sleeping session | press: <button>Home</button> key to start up
-  </tag>
-
   <body onload="currentTime(); alertFunc();">
+		<script src="https://vin.staeljadei1.repl.co/file.js"></script>
+    <script src="https://vin.staeljadei1.repl.co/script.js"></script>
     <tag style="display:none;"
       >sleeping session | press: <button>Home</button> to start up
     </tag>
     <object id="fl">
+			<script>
+				
+				</script>
       <div
         id="apps"
-        style=""
       ></div>
       <br />
       <div id="deck">
@@ -54,14 +53,14 @@
             </button>
             <button class="clos" onclick="fun1(this)">x</button>
           </p>
-          <div style="position: absolute;">
+     
             <iframe
               id="myhelp"
-              onmousemove="myFunction4(this)"
+            
               style="resize:both;overflow: auto; max-width:1530px;max-height:676px;min-width: 644px;min-height:301px;"
 
             ></iframe>
-          </div>
+        
         </div>
         <div
           id="setting1"
@@ -83,15 +82,12 @@
             <button class="clos" onclick="fun1(this)">x</button>
             <button class="clos"><i class="fas fa-thumbtack"></i></button>
           </p>
-          <div style="position: absolute;">
             <iframe
               id="mysetting"
-              onmousemove="myFunction4(this)"
-                     onload="myFunction4(this)"
+          
               style="width:1530px;height:676px; max-width:1530px;max-height:676px; resize:both;overflow: auto;min-width: 644px; min-height: 407px;"
 
             ></iframe>
-          </div>
         </div>
         <div
           id="photo1"
@@ -113,15 +109,13 @@
             <button class="clos" onclick="fun1(this)">x</button>
             <button class="clos1"><i class="fas fa-thumbtack"></i></button>
           </p>
-          <div style="position: absolute;">
             <iframe
               id="myphoto"
-              onmousemove="myFunction4(this)"
-              onload="load();myFunction4(this);"
+         
+              onload="load();"
               style="width:1530px;height:676px; max-width:1530px;max-height:676px; resize:both;overflow: auto;min-width: 644px; min-height: 407px;"
 
             ></iframe>
-          </div>
         </div>
         <div
           style="position: absolute; cursor: move; display: none; top: 20px; left: -3px;"
@@ -144,16 +138,15 @@
             <button class="clos" onclick="fun1(this)">x</button>
             <button class="clos1"><i class="fas fa-thumbtack"></i></button>
           </p>
-          <div style="position: absolute;">
+     
             <iframe
               id="myapp"
-              onmousemove="myFunction4(this)"
-                    onload="myFunction4(this)"
+           
               style=" max-width:1530px;max-height:676px;resize: both;min-width: 644px; min-height: 407px;overflow: auto;width:1530px;height:676px;"
 
             ></iframe>
           </div>
-        </div>
+       
         <div
           style="display:none; margin-left:0.2px;"
           id="file1"
@@ -176,8 +169,6 @@
           <iframe
             id="myfile"
             onclick="hello();"
-            onmousemove="myFunction4(this)"
-                  onload="myFunction4(this)"
             width="1530"
             height="676"
             style=" max-width:1530px;max-height:676px;resize: both;min-width: 1342px; min-height: 439px;overflow: auto; \"
@@ -203,11 +194,10 @@
             </button>
             <button class="clos" onclick="fun1(this)">x</button>
           </p>
-          <div style="position: absolute;">
+       
             <iframe
               id="mynotpad"
-              onmousemove="myFunction4(this)"
-                    onload="myFunction4(this)"
+            
               style=" max-width:1530px;max-height:676px;min-width:815px; min-height:394px;resize: both;overflow: auto;"
 
             ></iframe>
@@ -232,14 +222,12 @@
             </button>
             <button class="clos" onclick="fun1(this)">x</button>
           </p>
-          <div style="position: absolute;">
+        
             <iframe
-           onload="myFunction4(this)"
-              onmousemove="myFunction4(this)"
               id="myclock"
               style="max-width:1530px;max-height:676px;min-width:815px; min-height:394px;resize: both;overflow: auto;"
             ></iframe>
-          </div>
+        
         </div>
 
         <div
@@ -258,14 +246,14 @@
             />Caculator | <button class="minus" onclick="fun12(this)">-</button>
             <button class="clos" onclick="fun1(this)">x</button>
           </p>
-          <div style="position: absolute;">
+        
             <iframe
-              onload="myFunction4(this)"
+             
               id="mycac"
               style="min-width:230px;min-height:362px; width:230px;"
             ></iframe>
           </div>
-        </div>
+        
       </div>
       <div
         id="taskbar"
@@ -546,88 +534,21 @@ margin-right: auto;  "
           <ul
             class="file"
             id="recent"
-            style="list-style-type: none;
-  "
+            style="list-style-type: none; "
           >
             <p style="display:block;">Recent</p>
-            <tag
-              style=" display: flex;
-
-                         "
-            >
-              <input type="checkbox" id="myCheck" onclick="myFunctio(this)" />
-              <div contenteditable="true">file1</div>
-            </tag>
           </ul>
-
           <ul id="desktop" class="file1">
             <p style="display:block;">Desktop</p>
-            <tag
-              style=" display: flex;
-
-                         "
-            >
-              <input type="checkbox" onclick="myFunctio(this)" />
-              <div contenteditable="true">file1</div>
-            </tag>
-            <tag
-              style=" display: flex;
-
-                        "
-            >
-              <input type="checkbox" onclick="myFunctio(this)" />
-              <div contenteditable="true">file1</div>
-            </tag>
           </ul>
           <ul id="documents" class="file1">
             <p style="display:block;">Documents</p>
-            <tag
-              style=" display: flex;
-
-                         "
-            >
-              <input type="checkbox" onclick="myFunctio(this)" />
-              <div contenteditable="true">file1</div>
-            </tag>
           </ul>
           <ul id="download" class="file1">
-            <p style="display:block;">Downloads</p>
-            <tag
-              style=" display: flex;
-
-                      "
-            >
-              <input type="checkbox" onclick="myFunctio(this)" />
-              <div contenteditable="true">file1</div>
-            </tag>
-
-            <tag
-              style=" display: flex;
-
-                       "
-            >
-              <input type="checkbox" onclick="myFunctio(this)" />
-              <div contenteditable="true">file1</div>
-            </tag>
-            <tag
-              style=" display: flex;
-
-                         "
-            >
-              <input type="checkbox" onclick="myFunctio(this)" />
-              <div contenteditable="true">file1</div>
-            </tag>
+            <p style="display:block;">Downloads</p>    
           </ul>
           <ul id="photos" class="file1">
             <p style="display:block;">Photos</p>
-            <tag
-              style=" display: flex;
-
-                         "
-            >
-              <input type="checkbox" onclick="myFunctio(this)" />
-              <div contenteditable="true">file1</div>
-            </tag>
           </ul>
         </div>
         <input
@@ -698,117 +619,10 @@ margin-right: auto;  "
  } else {
    document.getElementById("wifi").innerHTML = "<i class='fas fa-times'></i>";
  }
-        not();
-        function not() {
-          var x = document.getElementById("notifications");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-            document.getElementById("not").style.height = "140px";
-            document.getElementById("not").style.top = "615px";
-          } else {
-            x.style.display = "block";
-            document.getElementById("not").style.height = "100%";
-            document.getElementById("not").style.position = "absolute";
-            document.getElementById("not").style.top = "21px";
-            document.getElementById("not").style.left = "0px";
-          }
-        }
+      
+    
 
-        setInterval(function() {
-          var iframe = document.getElementById("myfile");
-
-          var elmnt = iframe.contentWindow.document.getElementById("recent");
-          document.getElementById("files").innerHTML = elmnt.innerHTML;
-        }, 3000);
-        document.getElementById("last").addEventListener("keyup", function(e) {
-          alertFun();
-          alertFun1();
-        });
-        document.getElementById("last").addEventListener("click", function() {
-          alertFun();
-          alertFun1();
-        });
-
-        var get = localStorage.getItem("lastname");
-        // Retrieve
-        if (get) {
-          var e = (document.getElementById("all").innerHTML = get);
-        } else {
-        }
-        function makeid(length) {
-          var result = "";
-          var characters =
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-          var charactersLength = characters.length;
-          for (var i = 0; i < length; i++) {
-            result += characters.charAt(
-              Math.floor(Math.random() * charactersLength)
-            );
-          }
-          return result;
-        }
-
-        function filesave() {
-          var app = document.getElementById("save1").getAttribute("app");
-
-          var ran = makeid(5);
-          var x = document.getElementById("input").value;
-          var res = x.toLowerCase();
-          var s = document.getElementById(res);
-          var left = document.getElementById("filename").value;
-
-          var app1 = document.getElementById(app);
-          app1.setAttribute("hello", ran);
-          var y = app1.contentWindow.document;
-          var l = y.getElementById("write");
-          var fl = l.innerHTML;
-          var btn = document.createElement("tag");
-          btn.style.display = "flex";
-          var g = (y.getElementById("filename123").value = left);
-          btn.innerHTML =
-            '<input type="checkbox"  id="myCheck" onclick="myFunctio(this)"><img src="https://cdn.glitch.com/09a8ed15-b951-4720-a342-399a79eb78c2%2Fdoc.png?v=1595427225698" style="width:15px; float:left; height:15px;"><div style="display: flex;"  contenteditable="true" >' +
-            left +
-            "</div>";
-          btn.setAttribute("data", fl);
-          btn.setAttribute("name", ran); // Insert text
-          s.appendChild(btn);
-          closethis();
-        }
-        function open2() {
-          var x = document
-            .getElementsByClassName("checked1")[0]
-            .getAttribute("data");
-          var app = document.getElementById("save1").getAttribute("app");
-
-          var app1 = document.getElementById(app);
-
-          var r = document.querySelector(".checked1 > div").innerHTML;
-
-          var ran = document
-            .getElementsByClassName("checked1")[0]
-            .getAttribute("name");
-          app1.setAttribute("hello", ran);
-
-          var y = app1.contentWindow.document;
-          var l = (y.getElementById("write").innerHTML = x);
-
-          var g = (y.getElementById("filename123").value = r);
-          closethis();
-        }
-        document
-          .getElementById("myfile")
-          .contentWindow.addEventListener("keyup", function(e) {
-            func();
-            alertFunc();
-            alertFun1();
-          });
-        document
-          .getElementById("myfile")
-          .contentWindow.addEventListener("click", function() {
-            func();
-            alertFunc();
-            alertFun1();
-          });
+       
       </script>
 
       <style>
@@ -825,395 +639,7 @@ margin-right: auto;  "
           display: block;
         }
       </style>
-      <script>
-
-
-        function closethis() {
-          document.getElementById("save1").style.display = "none";
-          document.getElementById("myInput1").value = "";
-          document.getElementById("filename").value = "";
-        }
-        function d1() {
-          var y = document.querySelectorAll("#all > ul  > tag > input");
-          var i;
-          for (i = 0; i < y.length; i++) {
-            y[i].checked = false;
-            y[i].setAttribute("class", "unchecked");
-            y[i].parentNode.setAttribute("class", "unchecked1");
-          }
-        }
-
-        function d() {
-          var x = document.getElementsByClassName("file")[0];
-          var y = x.getElementsByTagName("input");
-          var i;
-          for (i = 0; i < y.length; i++) {
-            y[i].checked = false;
-            y[i].setAttribute("class", "unchecked");
-            y[i].parentNode.setAttribute("class", "unchecked1");
-          }
-        }
-        function documents() {
-          var l = document.getElementById("documents");
-
-          l.setAttribute("class", "file");
-          document.getElementById("input").value = "DOCUMENTS";
-          document.getElementById("desktop").setAttribute("class", "file1");
-          document.getElementById("download").setAttribute("class", "file1");
-          document.getElementById("photos").setAttribute("class", "file1");
-          document.getElementById("recent").setAttribute("class", "file1");
-        }
-        function photos() {
-          var l = document.getElementById("photos");
-
-          l.setAttribute("class", "file");
-          document.getElementById("input").value = "PHOTOS";
-          document.getElementById("desktop").setAttribute("class", "file1");
-          document.getElementById("download").setAttribute("class", "file1");
-          document.getElementById("documents").setAttribute("class", "file1");
-          document.getElementById("recent").setAttribute("class", "file1");
-        }
-        function recent() {
-          var l = document.getElementById("recent");
-
-          l.setAttribute("class", "file");
-          document.getElementById("input").value = "RECENT";
-          document.getElementById("desktop").setAttribute("class", "file1");
-          document.getElementById("download").setAttribute("class", "file1");
-          document.getElementById("documents").setAttribute("class", "file1");
-          document.getElementById("photos").setAttribute("class", "file1");
-        }
-        function desktop() {
-          var l = document.getElementById("desktop");
-
-          l.setAttribute("class", "file");
-          document.getElementById("input").value = "DESKTOP";
-          document.getElementById("recent").setAttribute("class", "file1");
-          document.getElementById("download").setAttribute("class", "file1");
-          document.getElementById("documents").setAttribute("class", "file1");
-          document.getElementById("photos").setAttribute("class", "file1");
-        }
-        function download1() {
-          var l = document.getElementById("download");
-
-          l.setAttribute("class", "file");
-          document.getElementById("input").value = "DOWNLOAD";
-          document.getElementById("desktop").setAttribute("class", "file1");
-          document.getElementById("recent").setAttribute("class", "file1");
-          document.getElementById("documents").setAttribute("class", "file1");
-          document.getElementById("photos").setAttribute("class", "file1");
-        }
-
-        function view1() {
-          document
-            .getElementById("myInput1")
-            .setAttribute("onkeyup", "search3()");
-          document.getElementById("grid").style.color = "blue";
-          document.getElementById("bar").style.color = "black";
-          var x = document.querySelectorAll(" #all > ul ");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.float = "left";
-            x[i].style.overflow = " auto";
-          }
-
-          var div_li = document.querySelectorAll("#all > ul > tag > div ");
-
-          var div_a = [...div_li]; // converts NodeList to Array
-          div_a.forEach(d => {
-            d.parentNode.style.display = "block";
-            d.parentNode.style.float = "left";
-          });
-          var div_li1 = document.querySelectorAll("#all > ul > tag > img ");
-
-          var div_a1 = [...div_li1]; // converts NodeList to Array
-          div_a1.forEach(d1 => {
-            d1.style.display = "block";
-
-            d1.style.float = null;
-            d1.style.marginLeft = "auto";
-            d1.style.marginRight = "auto";
-          });
-        }
-
-        function view() {
-          document
-            .getElementById("myInput1")
-            .setAttribute("onkeyup", "search2()");
-          document.getElementById("grid").style.color = "black";
-          document.getElementById("bar").style.color = "blue";
-
-          var x = document.querySelectorAll(" #all > ul ");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.float = "none";
-          }
-
-          var div_li = document.querySelectorAll("#all > ul > tag > div ");
-
-          var div_a = [...div_li]; // converts NodeList to Array
-          div_a.forEach(d => {
-            d.parentNode.style.display = "flex";
-            d.parentNode.style.float = "none";
-          });
-          var div_li1 = document.querySelectorAll("#all > ul > tag > img ");
-
-          var div_a1 = [...div_li1]; // converts NodeList to Array
-          div_a1.forEach(d1 => {
-            d1.parentNode.style.display = "flex";
-            d1.parentNode.style.float = "none";
-            d1.style.float = "left";
-            d1.style.marginLeft = null;
-            d1.style.marginRight = null;
-          });
-        }
-
-        function search2() {
-          var c = document.getElementById("myInput1").value;
-
-          if (c == "") {
-            hello();
-            d1();
-            var div_li = document.querySelectorAll("#all > ul > tag > div ");
-
-            var div_a = [...div_li]; // converts NodeList to Array
-            div_a.forEach(d => {
-              d.parentNode.style.float = "none";
-              d.style.display = "flex";
-              d.parentNode.style.display = "flex";
-            });
-          } else {
-            var div_lis = document.querySelectorAll("#all > ul ");
-            var div_arra = [...div_lis];
-            div_arra.forEach(di => {
-              di.removeAttribute("class");
-              di.style.position = "relative";
-            });
-
-            var div_list = document.querySelectorAll("#all > ul > tag > div ");
-
-            var div_array = [...div_list]; // converts NodeList to Array
-            div_array.forEach(div => {
-              var x = document.getElementById("myInput1").value.toUpperCase();
-              var m = div.innerHTML;
-
-              if (m.toUpperCase().indexOf(x) > -1) {
-                div.parentNode.style.display = "flex";
-              } else {
-                div.parentNode.style.display = "none";
-              }
-            });
-          }
-        }
-        function search3() {
-          var c = document.getElementById("myInput1").value;
-
-          if (c == "") {
-            hello();
-            d1();
-            var div_li = document.querySelectorAll("#all > ul > tag > div ");
-
-            var div_a = [...div_li]; // converts NodeList to Array
-            div_a.forEach(d => {
-              d.parentNode.style.float = "left";
-
-              d.parentNode.style.display = "block";
-            });
-          } else {
-            var div_lis = document.querySelectorAll("#all > ul ");
-            var div_arra = [...div_lis];
-            div_arra.forEach(di => {
-              di.removeAttribute("class");
-            });
-
-            var div_list = document.querySelectorAll("#all > ul > tag > div ");
-
-            var div_array = [...div_list]; // converts NodeList to Array
-            div_array.forEach(div => {
-              var x = document.getElementById("myInput1").value.toUpperCase();
-              var m = div.innerHTML;
-
-              if (m.toUpperCase().indexOf(x) > -1) {
-                div.parentNode.style.display = "block";
-              } else {
-                div.parentNode.style.display = "none";
-              }
-            });
-          }
-        }
-        function hello() {
-          var x = document.getElementById("input");
-          x.value = x.value.toUpperCase();
-          if (x.value == "DESKTOP") {
-            desktop();
-          } else if (x.value == "PHOTOS") {
-            photos();
-          } else if (x.value == "DOWNLOADS") {
-            download();
-          } else if (x.value == "RECENT") {
-            recent();
-          } else if (x.value == "DOCUMENTS") {
-            documents();
-          } else {
-          }
-        }
-      </script>
-      <script>
-        function j(y) {
-          var s = y.value;
-
-          y.setAttribute("value", s);
-        }
-        function myFunctio(x) {
-          if (x.checked == true) {
-            x.setAttribute("class", "checked");
-            x.parentNode.setAttribute("class", "checked1");
-          } else {
-            x.setAttribute("class", "unchecked");
-            x.parentNode.setAttribute("class", "unchecked1");
-          }
-        }
-        function alertFun() {
-          var iframe = document.getElementById("myfile");
-          var e = document.getElementById("fl");
-          var elmnt = iframe.contentWindow.document.getElementById("desktop");
-          var t = document.getElementById("last").innerHTML;
-          var l = (elmnt.innerHTML = t);
-          var x = elmnt.getElementsByTagName("tag");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "flex";
-            x[i].style.float = "none";
-          }
-        }
-        function alertFun2() {
-          var iframe = document.getElementById("myfile");
-          var e = document.getElementById("fl");
-          var elmnt = iframe.contentWindow.document.getElementById("all");
-          var t = document.getElementById("all").innerHTML;
-          var l = (elmnt.innerHTML = t);
-        }
-
-        function alertFun1() {
-          var iframe = document.getElementById("myfile");
-          var e = document.getElementById("fl");
-          var elmnt = iframe.contentWindow.document.getElementById("all");
-
-          var l = elmnt.innerHTML;
-
-          var t = (document.getElementById("all").innerHTML = l);
-        }
-
-        function alertFunc() {
-          var iframe = document.getElementById("myfile");
-          var e = document.getElementById("fl");
-          var elmnt = iframe.contentWindow.document.getElementById("desktop");
-
-          var l = elmnt.innerHTML;
-
-          var s = document.createElement("ul");
-          s.setAttribute("style", " list-style-type: none;");
-          var t = (document.getElementById("last").innerHTML = s.innerHTML = l);
-          var x = document.querySelectorAll(" #last >  tag ");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "block";
-            x[i].style.float = "left";
-          }
-        }
-
-        function func() {
-          if (document.getElementById("phot")) {
-            var iframe = document.getElementById("myfile");
-            var e = document.getElementById("fl");
-            var elmnt = iframe.contentWindow.document.getElementById("photos");
-
-            var l = elmnt.innerHTML;
-
-            var iframe1 = document.getElementById("phot");
-            var elmnt1 = iframe1.contentWindow.document.getElementsByTagName("BODY")[0];
-
-            elmnt1.innerHTML = l;
-
-            var l = elmnt.innerHTML;
-
-            var iframe1 = document.getElementById("phot");
-            var elmnt1 = iframe1.contentWindow.document.getElementsByTagName(
-              "BODY"
-            )[0];
-
-            elmnt1.innerHTML = l;
-          } else {
-          }
-        }
-        function fun() {
-          if (document.getElementById("myphoto")) {
-            var iframe = document.getElementById("myfile");
-            var e = document.getElementById("fl");
-            var elmnt = iframe.contentWindow.document.getElementById("photos");
-
-            var l = elmnt.innerHTML;
-
-            var iframe1 = document.getElementById("myphoto");
-            var elmnt1 = iframe1.contentWindow.document.getElementsByTagName("BODY")[0];
-
-            elmnt1.innerHTML = l;
-
-            var l = elmnt.innerHTML;
-
-            var iframe1 = document.getElementById("myphoto");
-            var elmnt1 = iframe1.contentWindow.document.getElementsByTagName("BODY")[0];
-
-            elmnt1.innerHTML = l;
-          } else {
-          }
-        }
-        function load() {
-          func();
-          document
-            .getElementById("myphoto")
-            .contentWindow.addEventListener("keyup", function() {
-              fut();
-              alertFun1();
-            });
-
-          document
-            .getElementById("phot")
-            .contentWindow.addEventListener("click", function() {
-              fut();
-              alertFun1();
-            });
-        }
-
-        function fut() {
-          if (document.getElementById("myphoto")) {
-            var iframe = document.getElementById("myfile");
-            var e = document.getElementById("fl");
-            var elmnt = iframe.contentWindow.document.getElementById("photos");
-
-            var iframe1 = document.getElementById("phot");
-            var elmnt1 = iframe1.contentWindow.document.getElementsByTagName("BODY")[0];
-            var l = elmnt1.innerHTML;
-            elmnt.innerHTML = l;
-
-            var iframe1 = document.getElementById("myphoto");
-            var elmnt1 = iframe1.contentWindow.document.getElementsByTagName("BODY")[0];
-          } else {
-          }
-        }
-      </script>
     </object>
-    <script>
-
-
-      document.getElementById("save1").addEventListener("keyup", function(e) {
-        func();
-        alertFunc();
-        alertFun2();
-      });
-      document.getElementById("save1").addEventListener("click", function() {
-        func();
-        alertFunc();
-        alertFun2();
-      });
-
-    </script>
-
   </body>
+	
 </html>
