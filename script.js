@@ -340,7 +340,7 @@ function lanuchy(div,divy){
   } else {
 	document.getElementsByClassName("unbody")[0].setAttribute("id",div+1);
 	}
-  var elem = document.getElementById(div+1).getElementsByTagName("div")[0]
+  var elem = document.getElementById(div).getElementsByTagName("div")[0]
   var x = window.getComputedStyle(elem, null).getPropertyValue("background-color");
 if (x== "rgb(144, 238, 144)"){
 	document.getElementById(div+1).style.display = "none";
@@ -551,3 +551,4 @@ function dragElement1(elmnt) {
     document.onmousemove = null;
   }
 }
+
