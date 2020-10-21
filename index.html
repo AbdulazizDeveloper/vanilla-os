@@ -410,7 +410,7 @@ reader.onerror = function() {
    
 
       <script>
-     function wea(){
+       function wea(){
      var game=   document.getElementById("gh").innerHTML;
 
 if (document.getElementById("gh").innerHTML=""){
@@ -429,7 +429,6 @@ xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+game+"&
 xmlhttp.send();
 
 }
-
  $.ajax({
   url: "https://geolocation-db.com/jsonp",
   jsonpCallback: "callback",
@@ -437,7 +436,7 @@ xmlhttp.send();
   success: function(location) {
     $('#country').html(location.country_name);
     $('#city').html(location.city+" , "+location.state);
-document.getElementById("gh").innerHTML=location.city;
+    document.getElementById("gh").innerHTML=location.city;
    wea()
   }
 });
