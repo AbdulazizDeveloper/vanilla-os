@@ -420,7 +420,7 @@ if (document.getElementById("gh").innerHTML=""){
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
-    document.getElementById("wifi").innerHTML =  " <img src='http://openweathermap.org/img/w/" + myObj.weather[0].icon + ".png'>" +myObj.main.temp+"℉"+"<br>"+myObj.weather[0].description+"<br>"+"Feels like: "+myObj.main.feels_like+"℉";
+    document.getElementById("wifi").innerHTML =  " <img src='https://openweathermap.org/img/w/" + myObj.weather[0].icon + ".png'>" +myObj.main.temp+"℉"+"<br>"+myObj.weather[0].description+"<br>"+"Feels like: "+myObj.main.feels_like+"℉";
   }
 
 };
