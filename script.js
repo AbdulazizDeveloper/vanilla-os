@@ -177,17 +177,16 @@ ul = document.getElementById("myUL");
         if(input.value.toLowerCase().includes("clock") || input.value.toLowerCase().includes("time") || input.value.toLowerCase().includes("date") ){
           document.getElementById("widget").style.display=""
           document.getElementById("input").style.display="none"
-          document.getElementById("stopwatch").style.display="none"
+          document.getElementById("wifi").style.display="none"
         } else if (input.value.toLowerCase().includes("month")|| input.value.toLowerCase().includes("day")|| input.value.toLowerCase().includes("year")) {
          document.getElementById("widget").style.display=""
          document.getElementById("input").style.display="none"
-         document.getElementById("stopwatch").style.display="none"
-        } else if (input.value.toLowerCase().includes("caculator")|| input.value.toLowerCase().includes("number")|| input.value.toLowerCase().includes("divison")) {
-         document.getElementById("input").style.display=""
-         document.getElementById("widget").style.display="none"
          document.getElementById("wifi").style.display="none"
-       }else if (input.value.toLowerCase().includes("wifi")|| input.value.toLowerCase().includes("connection")|| input.value.toLowerCase().includes("network") || input.value.toLowerCase().includes("internet") ){
-         document.getElementById("stopwatch").style.display=""
+        } else if (input.value.toLowerCase().includes("caculator")|| input.value.toLowerCase().includes("number")|| input.value.toLowerCase().includes("divison")) {
+         document.getElementById("widget").style.display="none"
+       document.getElementById("wifi").style.display="none"
+       }else if (input.value.toLowerCase().includes("weather")|| input.value.toLowerCase().includes("tempature")|| input.value.toLowerCase().includes("climate")  ){
+         document.getElementById("wifi").style.display=""
          document.getElementById("input").style.display="none"
          document.getElementById("widget").style.display="none"
        }else{
@@ -206,7 +205,11 @@ var gh=isFinite(hel);
        
   
        if (gh==false){
-        document.getElementById("input").style.display="none"
+        if (input.value.toLowerCase().includes("caculator")|| input.value.toLowerCase().includes("number")|| input.value.toLowerCase().includes("divison")) {
+        document.getElementById("input").style.display=""
+        }else{
+          document.getElementById("input").style.display="none"
+        }
        }else{
         var cac = eval(get); 
         document.getElementById("input").style.display=""
@@ -310,16 +313,7 @@ function theme() {
     }
   }
 }
-window.addEventListener('online', updateOnlineStatus);
-window.addEventListener('offline', updateOnlineStatus);
-function updateOnlineStatus() {
-  if (navigator.onLine) {
-    document.getElementById("wifi").innerHTML = '<i class="fas fa-wifi"></i>';
-  } else {
-    document.getElementById("wifi").innerHTML = "<i class='fas fa-times'></i>";
-  }
 
-}
 var openFile = function(file) {
   var fileType = document.getElementById('inputfile').files[0].type;
 var fileModifiedDate = document.getElementById('inputfile').files[0].lastModifiedDate;
