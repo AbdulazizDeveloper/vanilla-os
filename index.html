@@ -14,9 +14,10 @@
 
   </head>
   <body>
+    <p id="gh"></p>
     <tag style="display:none;">sleeping session | press: <button>Home</button> to start up
     </tag>
- <object id="fl">
+ <object id="fl" onload="onload();">
 <img  id="op" style="width:100%;height:100%;">
 			<script>
     function getoutput(hello) {
@@ -409,12 +410,25 @@ reader.onerror = function() {
    
 
       <script>
-       
-        if (navigator.onLine) {
-   document.getElementById("wifi").innerHTML ="<i class='fas fa-wifi'></i>	";
- } else {
-   document.getElementById("wifi").innerHTML = "<i class='fas fa-times'></i>";
- }
+       function wea(){
+     var game=   document.getElementById("gh").innerHTML;
+
+if (document.getElementById("gh").innerHTML=""){
+
+}else{
+       var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    document.getElementById("wifi").innerHTML =  " <img src='http://openweathermap.org/img/w/" + myObj.weather[0].icon + ".png'>" +myObj.main.temp+"℉"+"<br>"+myObj.weather[0].description+"<br>"+"Feels like: "+myObj.main.feels_like+"℉";
+  }
+
+};
+xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+game+"&units=imperial&appid=4582629a6ac14d56a2fdc06c6b9b714e", true);
+xmlhttp.send();
+
+}
+}
  $.ajax({
   url: "https://geolocation-db.com/jsonp",
   jsonpCallback: "callback",
@@ -422,9 +436,12 @@ reader.onerror = function() {
   success: function(location) {
     $('#country').html(location.country_name);
     $('#city').html(location.city+" , "+location.state);
+
+   wea()
   }
 });
- 
+
+
       </script>
 
       <style>
