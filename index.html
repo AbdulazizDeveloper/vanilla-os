@@ -410,7 +410,7 @@ reader.onerror = function() {
    
 
       <script>
-       function wea(){
+     function wea(){
      var game=   document.getElementById("gh").innerHTML;
 
 if (document.getElementById("gh").innerHTML=""){
@@ -424,11 +424,12 @@ xmlhttp.onreadystatechange = function() {
   }
 
 };
+}
 xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+game+"&units=imperial&appid=4582629a6ac14d56a2fdc06c6b9b714e", true);
 xmlhttp.send();
 
 }
-}
+
  $.ajax({
   url: "https://geolocation-db.com/jsonp",
   jsonpCallback: "callback",
