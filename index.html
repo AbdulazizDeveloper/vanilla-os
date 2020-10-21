@@ -437,7 +437,7 @@ xmlhttp.send();
   success: function(location) {
     $('#country').html(location.country_name);
     $('#city').html(location.city+" , "+location.state);
-
+document.getElementById("gh").innerHTML=location.city;
    wea()
   }
 });
