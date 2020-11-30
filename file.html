@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  
+<div style=" position: absolute;background-color:#303030; left:0px; width:100%; top: 0%; text-align: center;">
+  <div id="file" style="background-color:#303030;  margin-top: 0%; text-align: center;" id="" >Upload</div>
+ <label> Upload <input type='file' id='inputfile' name='inputfile' onChange='getoutput(this);openFile(event);' type="file" accept=".html,image/*,.txt,.pdf"></label>    &nbsp; <button>Editor</button>  <button>Download</button>
+</div> 
+<iframe src="about:blank" style="border:none;margin-top: 2%;margin-left: -1%; height: 89%; position:absolute; width: 100%;" id="con" ></iframe>
+<img id='img' style="resize:none;position: absolute;top:8%;  display: none;">
+<style>
+  	label,button,select,input{
+         background-color:black;color:white;border:none;border-radius:3px;
+        }
+        div{
+          color:ghostwhite;
+          font-family: 'Courier New', Courier, monospace;
+          background-color: black;
+        }
+        body{
+         background-color:white ; color: ghostwhite;
+        }
+        input[type="file"]{
+         display: none;
+        }
+  </style>
+
+  <!-- The `multiple` attribute lets users select multiple files. -->
+<div id="info" style="width:100%; ;left: 0;  position:absolute;bottom:0px;">
+ Find advanced information here
+  </div>
+
+  <script>
+   
+
+    function getoutput(hello) {
+ var m=hello.value.substr(hello.value.lastIndexOf('\\') + 1)
+        document.getElementById("file").innerHTML=m;
+        var fileName = document.getElementById('inputfile').files[0].name;
+    var fileSize = document.getElementById('inputfile').files[0].size;
+    var fileType = document.getElementById('inputfile').files[0].type;
+    var fileModifiedDate = document.getElementById('inputfile').files[0].lastModifiedDate;
+    if(fileType.includes("image")){
+      document.getElementById('con').style.display="none"
+  document.getElementById('img').style.display=""
+
+   
+
+    }else if(fileType.includes("pdf")){
+      alert(btoa( document.getElementById('inputfile').value))
+            // The Base64 string of a simple PDF file
+
+// Decode Base64 to binary and show some information about the PDF file (note that I skipped all checks)
+var bin = atob(b64);
+console.log('File Size:', Math.round(bin.length / 1024), 'KB');
+console.log('PDF Version:', bin.match(/^.PDF-([0-9.]+)/)[1]);
+console.log('Create Date:', bin.match(/<xmp:CreateDate>(.+?)<\/xmp:CreateDate>/)[1]);
+console.log('Modify Date:', bin.match(/<xmp:ModifyDate>(.+?)<\/xmp:ModifyDate>/)[1]);
+console.log('Creator Tool:', bin.match(/<xmp:CreatorTool>(.+?)<\/xmp:CreatorTool>/)[1]);
+
+// Embed the PDF into the HTML page and show it to the user
+var obj = document.createElement('object');
+obj.style.width = '100%';
+obj.style.height = '842pt';
+obj.type = 'application/pdf';
+obj.data = 'data:application/pdf;base64,' + b64;
+document.body.appendChild(obj);
+
+// Insert a link that allows the user to download the PDF file
+
+      document.getElementById('con').setAttribute("type",'application/pdf'  )
+      document.getElementById('con').setAttribute("src",'data:application/pdf;base64,' +btoa( document.getElementById('inputfile').value) )
+      document.getElementById('con').style.display=""
+    }else{
+      let file = hello.files[0];
+
+let reader = new FileReader();
+
+reader.readAsText(file);
+
+reader.onload = function() {
+  document.getElementById('con').style.display=""
+  document.getElementById('img').style.display="none"
+  document.getElementById('con').contentDocument.body.outerHTML=reader.result;
+};
+
+reader.onerror = function() {
+  document.getElementById('info').innerHTML="error";
+};
+    }
+    var file_info = fileName+" "+fileSize+" bytes"+" "+fileType+" "+fileModifiedDate;
+    document.getElementById('info').innerHTML=file_info;
+    }
+    var openFile = function(file) {
+      var fileType = document.getElementById('inputfile').files[0].type;
+    var fileModifiedDate = document.getElementById('inputfile').files[0].lastModifiedDate;
+    if(fileType.includes("image")){
+    var input = file.target;
+
+    var reader = new FileReader();
+    reader.onload = function(){
+      var dataURL = reader.result;
+      var output = document.getElementById('img')
+      output.setAttribute("src",dataURL)
+    };
+    reader.readAsDataURL(input.files[0]);
+    }else{
+
+    }
+  };
+    </script>
+</body>
+</html>

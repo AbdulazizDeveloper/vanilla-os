@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+  />
+  <head>
+    <title>Page Title</title>
+    <script src="notepad.js"></script>
+  </head>
+  <body
+    style="background-color:#303030; overflow-x: hidden;"
+  >
+    <style>
+			button,select,input,div{
+				color:white;
+			}
+      #red {
+        background-color: red;
+        border-radius: 50%;
+        border: none;
+        width: 15px;
+        height: 15px;
+      }
+      #blue {
+        background-color: blue;
+        border-radius: 50%;
+        border: none;
+        width: 15px;
+        height: 15px;
+      }
+      #yellow {
+        background-color: yellow;
+        border-radius: 50%;
+        border: none;
+        width: 15px;
+        height: 15px;
+      }
+      #black {
+        background-color: black;
+        border-radius: 50%;
+        border: none;
+        width: 15px;
+        height: 15px;
+      }
+      #white {
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid black;
+        width: 15px;
+        height: 15px;
+      }
+    </style>
+    <div style="position:fixed; top:1px; left:1px;">
+      <input
+        id="filename123"
+        value="Untitled"
+        style="background-color:#303030;border:none; width:99.6%; top:0px;text-align:center;"
+  
+      />
+
+      <br />
+      <div
+        style="width:99.5%;  justify-content: center; padding:3px; "
+      >
+        <button
+          style="-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;background-color:black;border:none;"
+          class="..utton"
+          onclick="left()"
+        >
+          <i class="fa fa-align-right"></i>
+        </button>
+        <button
+          style="-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;background-color:black;border:none;"
+          onclick="center()"
+        >
+          <i class="fa fa-align-center"></i>
+        </button>
+
+        <button
+          style="-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;background-color:black;border:none;"
+          class="..utton"
+          onclick="right()"
+        >
+          <i class="fa fa-align-left"></i>
+        </button>
+        <button
+          style="-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; background-color:black;border:none;"
+          class="..utton"
+          onclick="bold()"
+        >
+          <i class="fa fa-bold"></i>
+        </button>
+        <button
+          style="-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; background-color:black;border:none;"
+          class="..utton"
+          onclick=" italic() "
+        >
+          <i class="fa fa-italic"></i>
+        </button>
+
+        <button
+          style="-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;background-color:black; border:none;"
+          class="..utton"
+          onclick="u()"
+        >
+          <i class="fa fa-underline" aria-hidden="true"></i>
+        </button>
+        <button
+          style="-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;background-color:black; border:none;"
+          class="..utton"
+          onclick="s()"
+        >
+          <i class="fa fa-strikethrough" aria-hidden="true"></i>
+        </button>
+   
+        <select
+          style="-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  background-color:black;border:none;"
+          class="select"
+          id="fontsize"
+          onchange="fontsize(this)"
+        >
+          <option value="7">7px</option>
+          <option value="15">15px</option>
+          <option value="16">16px</option>
+          <option value="18">18px</option>
+          <option value="20">20px</option>
+          <option value="24">24px</option>
+          <option value="28">28px</option>
+          <option value="32">32px</option>
+          <option value="38">38px</option>
+        </select>
+
+        <select
+          style="-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  background-color:black;border:none;"
+          class="select"
+          onchange="fontfamily(this)"
+          id="fontfamily"
+        >
+          <option style="font-family:arial;" id="arial" value="Arial"
+            >Arial</option
+          >
+          <option style="font-family:calibri;" id="calibri" value="Calibri"
+            >Calibri</option
+          >
+          <option
+            style="font-family:times new roman;"
+            id="times new roman"
+            value="times new roman"
+            >Times new roman</option
+          >
+          <option
+            style="font-family:Comic Sans MS;"
+            id="comic sands "
+            value="comic sands ms"
+            >Comic Sands</option
+          >
+          <option
+            style="font-family:helvectia;"
+            id="helvectia"
+            value="helvectia"
+            >Helvectia</option
+          >
+          <option style="font-family: Impact;" value=" Impact"> Impact</option>
+          <option style="font-family:Lucida Console;" value="Lucida Console"
+            >Lucida Console</option
+          >
+          <option style="font-family:monospace;" value="monospace"
+            >monospace</option
+          >
+        </select>
+        <input
+          type="color"
+          oninput="yellow(this)"
+          style="border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;"
+        />
+        <button
+          id="save"
+          style="background-color:black;border:none;"
+          onclick="check()"
+        >
+          <i class="fas fa-save"></i>
+        </button>
+   
+      </div>
+      <div
+        class="thisdiv"
+        style="border:1px solid black; width:100%;     display: inline-block; background-color:white; height:90%;color:black;"
+        id="write"
+        contenteditable="true"
+      ></div>
+    </div>
+    <style>
+      input[type="color"] {
+        -webkit-appearance: none;
+        width: 25px;
+        height: 15px;
+        border: none;
+
+        overflow: hidden;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    
+  </body>
+</html>

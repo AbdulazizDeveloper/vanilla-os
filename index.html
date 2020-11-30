@@ -1,0 +1,265 @@
+<html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- import the webpage's javascript file -->
+
+  </head>
+  <body>
+    <tag style="display:none;">sleeping session | press: <button>Home</button> to start up
+    </tag>
+ <object id="fl">
+<img  id="op" style="width:100%;height:100%;">
+			<script>
+    function getoutput(hello) {
+
+
+
+      let file = hello.files[0];
+
+let reader = new FileReader();
+
+reader.readAsText(file);
+
+reader.onload = function() {
+
+};
+
+reader.onerror = function() {
+
+};
+    
+    
+    }
+    var openFile = function(file) {
+      var fileType = document.getElementById('inputfile').files[0].type;
+    var fileModifiedDate = document.getElementById('inputfile').files[0].lastModifiedDate;
+    if(fileType.includes("image")){
+    var input = file.target;
+
+    var reader = new FileReader();
+    reader.onload = function(){
+      var dataURL = reader.result;
+      var output = document.getElementById('op')
+      output.setAttribute("src",dataURL)
+    };
+    reader.readAsDataURL(input.files[0]);
+    }else{
+
+    }
+  };
+				</script>
+   
+      <br>
+      <div id="deck" style="position:absolute; top:0px; left:0px; width:100%; height:100%;">
+        <div  class="unbody">
+       <p>
+            <img><txt></txt> <button onclick="fun12(this)">-</button>
+            <button onclick="width(this)">
+           &#xf1eb;
+            </button>
+            <button onclick="fun1(this,event)">x</button>
+						<button onclick="refresh(this)">&#x21bb;</button>
+         </p>
+            <iframe  style="overflow: auto; max-width:1530px;max-height:676px;min-width: 644px;min-height:301px;"></iframe>
+        
+        </div>
+        <div    class="unbody">
+     <p>
+            <img><txt></txt> <button onclick="fun12(this)">-</button>
+            <button onclick="width(this)">
+              &#xf1eb;
+            </button>
+            <button onclick="fun1(this,event)">x</button>
+            	<button onclick="refresh(this)">&#x21bb;</button>
+           </p>  
+            <iframe  style="min-width: 644px; min-height: 407px;"></iframe>
+        </div>
+        <div  class="unbody">
+					<p>
+            <img><txt> </txt> <button onclick="fun12(this)">-</button>
+            <button onclick="width(this)">
+              &#xf1eb;
+            </button>
+            <button onclick="fun1(this,event)">x</button>
+            	<button onclick="refresh(this)">&#x21bb;</button>
+						</p>
+            <iframe style="min-width: 644px; min-height: 407px;"></iframe>
+        </div>
+        <div   class="unbody">
+					<p>
+            <img>
+           <txt> </txt> <button onclick="fun12(this)">-</button>
+            <button onclick="width(this)">
+              &#xf1eb;
+            </button>
+            <button onclick="fun1(this,event)">x</button>
+           	<button onclick="refresh(this)">&#x21bb;</button>
+						</p>
+            <iframe  style=" min-width: 644px; min-height: 407px;"></iframe>
+          </div>
+       
+        <div  class="unbody">
+					<p>
+            <img><txt></txt> <button onclick="fun12(this)">-</button>
+            <button onclick="width(this)">
+              &#xf1eb;
+            </button>
+            <button onclick="fun1(this,event)">x</button>
+            	<button onclick="refresh(this)">&#x21bb;</button>
+						</p>
+          <iframe    style=" resize: both;min-width: 1342px; min-height: 439px;overflow: auto; \" ></iframe>
+        </div>
+        <div  class="unbody">
+					<p>
+            <img><txt></txt> <button onclick="fun12(this)">-</button>
+            <button onclick="width(this)">
+              &#xf1eb;
+            </button>
+            <button onclick="fun1(this,event)">x</button>
+							<button onclick="refresh(this)">&#x21bb;</button>
+					</p>
+            <iframe></iframe>
+         
+        </div>
+      
+
+       
+        
+      </div>
+      <div id="hadg" onmouseout="document.getElementById('hadg').style.display='none';"  onmouseover="document.getElementById('hadg').style.display='';">
+		
+      </div>
+				      <div id="apps" onmouseover="document.getElementById('hadg').style.display='';">	  <button onclick="less()"  id="launch" href="#">
+                <b style="font-size:16px;">  <i class="fas fa-search"></i> </b>
+       </button>      <button id="theme"    onclick="theme()">
+                <b style="font-size:16px;"> <i class="fab fa-wpforms"></i></b></button>
+         <button id="g" onclick="sort()"><b style="font-size:16px;"> <i class="fas fa-tasks"></i></b></button></div>
+        
+
+      <div id="demo">
+        <div id="demoa" style=" color:white;  margin-top:-4px; text-align: left; width:97.6%;    left:0px;   height:20px; padding:8px; ">
+         <h1> Websites</h1>    		
+			
+
+         </div>
+        <input type="text"  placeholder="Search or paste in a Url" id="myInput" onkeyup="search()">
+<br>
+
+     
+<ul  id="myUL">
+  <li style="display:none;">
+    <a id="extractor" src="" onclick="extractor('');"  
+  appst="top: 60px; left: 580px;"	>
+      <img >
+      <p></p></a>
+  </li>
+          <tbody><tr style="text-align:center">
+<li> <a src="https://www.bing.com" onclick="lanuchapp1('https://www.bing.com',this);more()"><img src="http://www.google.com/s2/favicons?domain=www.bing.com"><p> &nbsp;bing</p></a></li>            
+
+         
+            <li>
+              <a src="file.html"  onclick="lanuchapp1('file.html',this);more()" >
+                <img src="file.png" >
+                &nbsp;
+                <p>File viewer & editor </p></a>
+            </li>
+
+            <li>
+              <a src="https://www.autodraw.com/"  onclick="lanuchapp1('https://www.autodraw.com/',this);more()" >
+                <img src="https://www.google.com/s2/favicons?domain=www.autodraw.com" >
+
+                	&nbsp;
+                    <p>Autodraw </p></a>
+            </li>
+            <li>
+              <a src="https://classic.minecraft.net/"  onclick="lanuchapp1('https://classic.minecraft.net/',this);more()" >
+                <img src="https://www.google.com/s2/favicons?domain=www.minecraft.net ">
+
+                	&nbsp;
+                    <p>Minecraft </p></a>
+            </li>
+            <li>
+              <a src="https://codepen.io/pen/"  onclick="lanuchapp1('https://codepen.io/pen/',this);more()" >
+                <img src="http://www.google.com/s2/favicons?domain=codepen.io">
+
+                	&nbsp;
+                    <p>Codepen </p></a>
+            </li>
+
+         
+        
+
+       
+
+           
+
+            <li>
+              <a src="notpad.html" onclick="lanuchapp1('notpad.html',this);more()"><img src="notpad.png" >
+                &nbsp;
+                <p>Notepad</p></a>
+            </li>
+           
+        
+        
+         
+        </tbody></ul>
+
+    
+
+      </div>
+     
+      <div id="not">
+        <iframe src="https://widgetcard.glitch.me/demo.html" style="border:none;width: 15px;min-width: 100%;min-height: 100%; overflow: hidden;">
+        </iframe>
+      </div>
+
+   
+
+      <script>
+       
+        if (navigator.onLine) {
+   document.getElementById("wifi").innerHTML ="<i class='fas fa-wifi'></i>	";
+ } else {
+   document.getElementById("wifi").innerHTML = "<i class='fas fa-times'></i>";
+ }
+ $.ajax({
+  url: "https://geolocation-db.com/jsonp",
+  jsonpCallback: "callback",
+  dataType: "jsonp",
+  success: function(location) {
+    $('#country').html(location.country_name);
+    $('#city').html(location.city+" , "+location.state);
+  }
+});
+ 
+      </script>
+
+      <style>
+        ul {
+          text-align: center;
+        }
+        .checked1 {
+          background-color: lightblue;
+        }
+        .file1 {
+          display: none;
+        }
+        .file {
+          display: block;
+        }
+      </style>
+    </object>
+	
+    <script src="script.js"></script>
+  
+	
+</body></html>
